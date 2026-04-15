@@ -76,21 +76,20 @@ public:
     string getName() const {
         return name;
         // YOUR CODE HERE
-        return "";
+      
     }
 
     // TODO 2b: Getter for id
     int getId() const {
         return id;
         // YOUR CODE HERE
-        return 0;
     }
 
     // TODO 2c: Getter for gpa
     double getGpa() const {
         return gpa;
         // YOUR CODE HERE
-        return 0.0;
+        
     }
 
     // ----- Task 3: Setters with Validation -----
@@ -163,9 +162,9 @@ public:
 Student findBestStudent(const Student& a, const Student& b) {
         if (a < b) {
     // YOUR CODE HERE
-    return a;
+    return b;
 }
-return b;
+return a;
 }
 
 // Version 2: Takes an array of Students and its size, returns the one with highest GPA
