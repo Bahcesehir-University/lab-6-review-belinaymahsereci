@@ -41,7 +41,7 @@ public:
     Student() {
         name="Unknown";
         id=0;
-        gpa=0;
+        gpa=0.0;
         // YOUR CODE HERE
     }
 
@@ -97,8 +97,8 @@ public:
     // TODO 3a: Setter for name
     // Name must not be empty. If empty, keep current name.
     void setName(string n) {
-        if(!n.empty())//if(name=="")
-        name=n;
+        if(!n.empty()){//if(name=="")
+        name=n;}
         // YOUR CODE HERE
     }
 
@@ -106,7 +106,7 @@ public:
     // GPA must be between 0.0 and 4.0 (inclusive).
     // If out of range, keep current GPA.
     void setGpa(double g) {
-        if(gpa<=4 && gpa>=0){
+        if(g<=4 && g>=0){
             gpa=g;
         }
         // YOUR CODE HERE
@@ -163,8 +163,9 @@ Student findBestStudent(const Student& a, const Student& b) {
         if (a < b) {
     // YOUR CODE HERE
     return b;
-}
+} else{
 return a;
+}
 }
 
 // Version 2: Takes an array of Students and its size, returns the one with highest GPA
@@ -228,3 +229,4 @@ int main() {
 
     return 0;
 }
+   
